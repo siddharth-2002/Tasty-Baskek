@@ -1,26 +1,48 @@
 {
-  "name": "tasty-basket-2",
-  "version": "1.0.0",
-  "engines": {
-    "node": ">=18 <19"
-  },
-  "description": "",
-  "main": "index.js",
+  "name": "client",
+  "version": "0.0.0",
   "scripts": {
-    "dev": "cd packages/client && npm start & cd packages/server && npm start",
-    "start": "cd packages/server/built && node server.js",
-    "prebuild": "cd packages/server && npm run build",
-    "build": "cd packages/client && npm run build",
-    "install-all": "cd packages/client && npm install && cd ../server && npm install"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "test-coverage": "ng test --no-watch --code-coverage"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MarcMechi98/tasty-basket-2.git"
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^17.0.6",
+    "@angular/common": "^17.0.6",
+    "@angular/compiler": "^17.0.6",
+    "@angular/core": "^17.0.6",
+    "@angular/forms": "^17.0.6",
+    "@angular/platform-browser": "^17.0.6",
+    "@angular/platform-browser-dynamic": "^17.0.6",
+    "@angular/router": "^17.0.6",
+    "@fortawesome/angular-fontawesome": "^0.14.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "leaflet": "^1.9.4",
+    "ngx-toastr": "^18.0.0",
+    "normalize.css": "^8.0.1",
+    "rxjs": "~7.8.1",
+    "tslib": "^2.6.2",
+    "zone.js": "~0.14.2"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MarcMechi98/tasty-basket-2/issues"
-  },
-  "homepage": "https://github.com/MarcMechi98/tasty-basket-2#readme"
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.0.6",
+    "@angular/cli": "^17.0.6",
+    "@angular/compiler-cli": "^17.0.6",
+    "@hirez_io/observer-spy": "^2.2.0",
+    "@types/jasmine": "~5.1.4",
+    "@types/leaflet": "^1.9.8",
+    "jasmine-core": "~5.1.1",
+    "karma": "~6.4.2",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.1",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "^5.2.0"
+  }
 }
